@@ -27,6 +27,14 @@ ul, li {
   color: #f44336;
 }
 
+.title {
+  font-size: 40px;
+
+  &_worn {
+    @extend .color-worn;
+  }
+}
+
 .mat-tab-label {
   opacity: 1 !important;
 

@@ -16,8 +16,8 @@ export class TabViewComponent implements OnInit {
   @Input() listYTItems;
 
   entryIndex = this.index;
-  statusGS = false;
-  statusYTS = true;
+  statusGS = true;
+  statusYTS = false;
 
   constructor(private googleApi: GoogleApiService, private YTApi: YoutubeApiService) {
   }
@@ -47,7 +47,11 @@ export class TabViewComponent implements OnInit {
 
     this.YTApi.getResults(event.data)
       .subscribe((data: Array<ListYTItem>) => {
-        this.listYTItems = data;
+        if (data.length !== 0) {
+          this.listYTItems = data;
+        } else {
+          this.listYTItems = 'no result';
+        }
       });
   }
 
