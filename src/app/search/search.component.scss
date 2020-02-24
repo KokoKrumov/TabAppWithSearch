@@ -1,0 +1,14 @@
+.search-box {
+  &_wrap {
+    padding: 40px 0 60px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  &_form {
+    width: 50%;
+    min-width: 300px;
+  }
+}

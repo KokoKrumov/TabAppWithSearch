@@ -1,0 +1,23 @@
+<article>
+  <mat-card class="example-card">
+    <div class="d-flex row">
+      <div class="col-12 col-lg-4">
+        <figure>
+          <img class="img-fluid" src="{{itemResult.snippet.thumbnail}}" alt="{{itemResult.snippet.title}}">
+        </figure>
+      </div>
+      <div class="col-12 col-lg-8">
+        <mat-card-title>{{itemResult.snippet.title}}</mat-card-title>
+        <mat-card-content>
+          <p>
+            {{itemResult.snippet.description}}
+          </p>
+        </mat-card-content>
+      </div>
+    </div>
+    <mat-card-actions class="py-3">
+      <a target="_blank" href="https://www.youtube.com/watch?v={{itemResult.id.videoId}}" mat-button class="mat-button-base">Open Link</a>
+      <button mat-button class="mat-button-base" (click)="openDialog()">Watch Video</button>
+    </mat-card-actions>
+  </mat-card>
+</article>

@@ -1,0 +1,13 @@
+<div class="d-flex justify-content-end">
+  <button mat-button (click)="onNoClick()">
+    <i class="material-icons">
+      close
+    </i>
+  </button>
+</div>
+<div mat-dialog-content *ngIf="data.description">
+  <p>{{data.description}}</p>
+</div>
+<div *ngIf="data.video"  class="embed-responsive embed-responsive-16by9">
+  <iframe height="auto" class="e2e-iframe-trusted-src embed-responsive-item" [src]="embedVideo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>

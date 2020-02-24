@@ -1,0 +1,12 @@
+<article>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-subtitle>{{itemResult.displayLink}}</mat-card-subtitle>
+      <mat-card-title>{{itemResult.title}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-actions class="py-3">
+      <a href="{{itemResult.link}}" mat-button class="mat-button-base" target="_blank">Open Link</a>
+      <button mat-button class="mat-button-base"  (click)="openDialog()">Read More</button>
+    </mat-card-actions>
+  </mat-card>
+</article>

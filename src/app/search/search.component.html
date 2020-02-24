@@ -1,0 +1,28 @@
+<div class="search-box_wrap">
+  <form #form="ngForm" (ngSubmit)="submit(form)" class="search-box_form" >
+    <div class="d-flex">
+      <div ngModelGroup="searchBox" class="w-100">
+        <mat-form-field class="w-100">
+          <input type="search"
+                 matInput
+                 required
+                 [(ngModel)]="searchEntry"
+                 name="searchEntry"
+                 id="searchEntry"
+                 class="color-white"
+                 placeholder="Search...">
+        </mat-form-field>
+      </div>
+
+      <div class="col">
+        <button mat-mini-fab color="primary" [disabled]="!form.valid">
+          <i class="material-icons">
+            search
+          </i>
+        </button>
+
+      </div>
+    </div>
+
+  </form>
+</div>

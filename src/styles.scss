@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/purple-green.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: #303030;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+.color-white {
+  color: #ffffff !important;
+}
+
+.color-worn {
+  color: #f44336;
+}
+
+.mat-tab-label {
+  opacity: 1 !important;
+
+  .material-icons {
+    font-size: 17px !important;
+  }
+
+  .mat-mini-fab {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;;
+
+    .mat-button-wrapper {
+      padding: 0 !important;
+    }
+  }
+}
