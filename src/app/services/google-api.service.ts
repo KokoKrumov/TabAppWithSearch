@@ -9,7 +9,7 @@ import {ListGItem} from '../interfaces/list-gitem';
 })
 export class GoogleApiService {
   googleApiUrl = 'https://www.googleapis.com/customsearch/v1?key=';
-  googleApiKeyAccess = 'AIzaSyA8stgDBEnqlGlJjECdTiMS10291dFzaSE';
+  googleApiKeyAccess = 'AIzaSyBStCqNUJBU9xso0gDdB-GAb-_6EpMox4I';
   googleSearchEngineID = '007240366113686025281:prgx4yh1iqb';
 
   constructor(private http: HttpClient) {
