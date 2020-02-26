@@ -47,7 +47,7 @@ export class TabViewComponent implements OnInit {
 
     this.YTApi.getResults(event.data)
       .subscribe((data: Array<ListYTItem>) => {
-        if (data.length !== 0) {
+        if (data.length !== 0 ) {
           this.listYTItems = data;
         } else {
           this.listYTItems = 'no result';

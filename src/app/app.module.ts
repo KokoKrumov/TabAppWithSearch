@@ -16,8 +16,7 @@ import { ListComponent } from './list/list.component';
 import { ItemResultComponent } from './item-result/item-result.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ModalDialogComponent } from './modal-dialog/modal-dialog.component';
-import { ListYtComponent } from './list-yt/list-yt.component';
-import { ItemResultYtComponent } from './item-result-yt/item-result-yt.component';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -28,8 +27,6 @@ import { ItemResultYtComponent } from './item-result-yt/item-result-yt.component
     ListComponent,
     ItemResultComponent,
     ModalDialogComponent,
-    ListYtComponent,
-    ItemResultYtComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +43,7 @@ import { ItemResultYtComponent } from './item-result-yt/item-result-yt.component
     ReactiveFormsModule,
     HttpClientModule,
     MatCardModule,
+    ScrollingModule
   ],
   providers: [],
   entryComponents: [
