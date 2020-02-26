@@ -4,26 +4,30 @@ import {ModalDialogComponent} from '../modal-dialog/modal-dialog.component';
 import {ListGItem} from '../interfaces/list-gitem';
 
 @Component({
-  selector: 'app-item-result',
-  templateUrl: './item-result.component.html',
-  styleUrls: ['./item-result.component.scss']
+    selector: 'app-item-result',
+    templateUrl: './item-result.component.html',
+    styleUrls: ['./item-result.component.scss']
 })
 
 export class ItemResultComponent implements OnInit {
-  @Input() itemResult: ListGItem;
+    @Input() itemResult;
 
 
-  constructor(public dialog: MatDialog) {
-  }
+    constructor(public dialog: MatDialog) {
+    }
 
-  openDialog(): void {
-    const dialogRef = this.dialog.open(ModalDialogComponent, {
-      width: '30%',
-      data: {title: this.itemResult.title, description: this.itemResult.snippet}
-    });
-  }
+    openDialog(): void {
+        const dialogRef = this.dialog.open(ModalDialogComponent, {
+            width: '50%',
+            data: {
+                title: this.itemResult.title,
+                description: this.itemResult.snippet,
+                video: this.itemResult.id
+            }
+        });
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
 }

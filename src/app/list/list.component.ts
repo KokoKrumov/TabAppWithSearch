@@ -7,6 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class ListComponent implements OnInit {
   @Input() GData;
+  @Input() YTData;
   constructor() { }
 
   ngOnInit() {
